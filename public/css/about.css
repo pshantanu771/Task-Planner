@@ -1,0 +1,88 @@
+.profilepic{
+    display: block;
+    margin: auto;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    transition: all .4s;
+}
+
+.profilepic:hover{
+    border-color: red;
+    transform: scale(1.1);
+
+}
+
+.name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: honeydew;
+}
+
+.connect{
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 60px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profiles a{
+    margin: 5px;
+    padding: 0px 15px 0px 15px;
+
+}
+i{
+    color: white;
+}
+
+.profiles a{
+    transition: all .4s;
+}
+
+.profiles a:hover{
+    transform: scale(1.5);
+    
+}
+
+.fa-github:hover{
+    color: black;
+}
+.fa-linkedin:hover{
+    color: #0275d8;
+}
+.fa-instagram:hover{
+    color:#E1306C;
+}
+.fa-facebook:hover{
+    color:#4267B2;
+}
+
+.fa-envelope, .fa-phone-alt{
+    margin-right: 11px;
+}
+.fa-phone-alt:hover{
+    color: greenyellow;
+}
+
+.fa-envelope:hover{
+    color: rgb(235, 83, 83);
+}
+
+@media screen and (max-width:300px) {
+    .profilepic{
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .name{
+        font-size: 25px;
+    }
+}

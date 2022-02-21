@@ -1,0 +1,102 @@
+.signupContainer{
+    padding: 35px;
+}
+
+.signupContainer h1{
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.signupContainer p, a{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.seprator{
+    height: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.loginContainer{
+    padding: 15px;
+}
+
+.loginContainer p, a{
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.signupForm{
+    margin: 1% auto 15% auto;
+    width: 70%;
+    background-color: rgb(241, 209, 209);
+    border-radius: 10px;
+    height: 550px;
+}
+.loginForm{
+    margin: 1% auto 15% auto;
+    width: 70%;
+    background-color: rgb(241, 209, 209);
+    border-radius: 10px;
+    /* height: 550px; */
+}
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    height: 35px;
+    border-radius: 6px;
+}
+
+input:focus{
+    background-color: #ddd;
+    outline: none;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+.signupBtn, .loginBtn{
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 23px;
+}
+
+
+  label{
+      font-weight: bold;
+  }
+
+
+  @media screen and (max-width:900px) {
+      .signupForm, .loginForm{
+          width: 100%;
+          margin-top: 2%;
+      }
+      .signupContainer{
+          padding: 20px;
+      }
+  }
+
+  /* Spinners */
+  .loading{
+      margin-right: 10px;
+      margin-bottom: 2px;
+      /* display: none; */
+  }
+
+.signupContainer label:after , .loginContainer label:after{
+    color: #e32;
+    content: ' *';
+}

@@ -1,0 +1,17 @@
+.contactForm{
+    margin: auto auto;
+    width: 100%;
+    background-color: rgb(241, 209, 209);
+    border-radius: 5px;
+}
+.contactContainer{
+    padding: 15px;
+}
+.contactBtn{
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.showAlert{
+    display: none;
+}
