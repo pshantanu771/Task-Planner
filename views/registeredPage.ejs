@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo list - Your daily routine</title>
+
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <!-- Font awesome cdn for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/loggedIn.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/loggedIn" style="color: gold; font-size: x-large;">TODO</a>
+      <form action="/logout" method="post">
+        <button type="submit" name="logout" class="btn btn-danger">Log out</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="box" id="heading">
+      <h1>Hello <%= dayName %>
+      </h1>
+    </div>
+    <div class="box">
+      <!-- We need to add new item to the list which we created below. For that we'll use ejs -->
+      <!-- <p class="initial">Click on + to add an item</p> -->
+
+
+      <div class="container">
+        <% for(let i=0;i<addedItem.length;i++){ %>
+          <form action="/delete" class="showItems" method="post">
+            <div class="item">
+              <button type="submit" name="deleteItem" class="btn-outline-danger deleteItem" value="<%= addedItem[i]%>"
+                title="Delete"><i class="fa fa-trash"></i></button>
+              <input type="checkbox" name="checkbox" title="Mark as done" style="border-radius: 20px;">
+              <!-- We put .name beacuse we are now using database -->
+              <p>
+                <%= addedItem[i] %>
+              </p>
+
+            </div>
+          </form>
+          <hr>
+          <% }%>
+      </div>
+
+
+
+
+
+      <form action="/addNewItem" class="addItem" method="post">
+        <input type="text" name="newItem" required placeholder="Add" autocomplete="off">
+        <button type="submit" name="btn" class="btn btn-outline-success mainBtn"><i class="fa fa-plus"></i></button>
+      </form>
+    </div>
+    <!-- <h1>Boom!! you are logged in</h1> -->
+
+  </div>
+  <form action="/resetAll" method="post">
+    <button type="submit" class="btn btn-danger resetBtn">Reset All</button>
+  </form>
+  <%- include("./beforeLogIn/footer.ejs") %>

@@ -1,0 +1,28 @@
+<%- include("./beforeLogIn/header.ejs") %>
+
+  <!-- <h1>Register page ok</h1> -->
+  <form action="/SignUp" class="signupForm" id="signupId" method="post">
+    <div class="signupContainer">
+      <h1>Sign up</h1>
+      <div class="seprator"></div>
+      <label for="name" class="signupUsername">Username</label>
+      <input type="text" name="username" placeholder="Enter username" class="signupUsername" required
+        autocomplete="off">
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter email" autocomplete="off" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" placeholder="Enter password" autocomplete="off" required>
+
+
+
+      <button type="submit" class="signupBtn btn-lg btn-primary" value="submit" title="Sign up">Sign up</button>
+
+      <p class="formCreateAcc">
+        Already have an account??
+        <a href="/showlogin" class="formLogin" title="login">Login</a>
+      </p>
+
+    </div>
+  </form>
+
+  <%- include("./beforeLogIn/footer.ejs") %>
