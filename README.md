@@ -4,5 +4,14 @@
   <h4 align="center">Your daily routine on your fingertips</h4>
 </p>
 
-[View demo](https://blooming-escarpment-61614.herokuapp.com/)
+# Screenshots of application
 
+<h3>Homepage</h3>
+
+<img src="https://github.com/pshantanu771/TODO-LIST/assets/82453714/94c7de89-9d4b-45e0-894b-4a9103d815b5">
+
+<h3>Authentication</h3>
+<img src="https://github.com/pshantanu771/TODO-LIST/assets/82453714/d706da12-9b6d-4b05-97a5-1df72f841005">
+
+<h3>Make a list</h3>
+<img src="https://github.com/pshantanu771/TODO-LIST/assets/82453714/d8793304-3aed-467f-8149-7dc107e3fb14">
