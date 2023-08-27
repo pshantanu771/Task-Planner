@@ -4,6 +4,10 @@
   <h4 align="center">Your daily routine on your fingertips</h4>
 </p>
 
+# <p align="center" margin-top="20%">
+  <h3 align="center"><a href="https://todo-list-htp5.onrender.com">View live</a></h3>
+
+
 # Screenshots of application
 
 <h3>Homepage</h3>
